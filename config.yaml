@@ -362,8 +362,8 @@ params:
   # Links of your friends
   # Usage: `Key: name || permalink`
   links: 
-    link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
-    link1: 凡梦星尘空间站 || https://lisenhui.cn
+    # link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
+    # link1: 凡梦星尘空间站 || https://lisenhui.cn
 
   # 文章目录显示
   # Table of Contents in the Sidebar
@@ -517,7 +517,7 @@ params:
     # 是否开启捐赠按钮，开启后将在每个文章页面底部显示
     # If true, a donate button will be displayed 
     # in every article by default.
-    enable: true
+    enable: false
     # 是否开启捐赠方式的动画效果
     # If true, the donate type title will with animation.
     animation: true
@@ -541,15 +541,15 @@ params:
   followMe:
     #channel0: Twitter || https://twitter.com/username || fab fa-twitter
     #channel1: Telegram || https://t.me/channel_name || fab fa-telegram
-    channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
-    channel3: RSS || /atom.xml || fa fa-rss
+    # channel2: WeChat || /images/wechat_channel.jpg || fab fa-weixin
+    # channel3: RSS || /atom.xml || fa fa-rss
 
   # 文章的在线编辑
   # Post edit
   # Easily browse and edit blog source code online.
   postEdit:
     enable: true
-    url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
+    url: https://github.com/fengyie007/fengyie007.github.io/tree/branch-name/content/
 
 
   # 设置文本的对齐方式
@@ -647,7 +647,7 @@ params:
     enable: true
     # 你的 Github 仓库地址
     # Your repository url on Github.
-    permalink: https://github.com/hugo-next
+    permalink: https://github.com/fengyie007
     # 关注说明
     # Show this title when cursor move on.
     title: Follow me on GitHub
