@@ -3,8 +3,8 @@ title: "{{ replace .Name "-" " " | title }}"
 description: "{{ .Name }}"
 keywords: "{{replace .Name "-" ","}}"
 
-date: "{{ .Date }}"
-lastmod: "{{ .Date }}"
+date: {{ .Date }}
+lastmod: {{ .Date }}
 
 categories:
   -
@@ -48,6 +48,6 @@ tags:
 #mermaid: true
 ---
 
-
+{{ .Name }}
 
 <!--more-->
