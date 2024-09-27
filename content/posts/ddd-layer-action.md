@@ -1,5 +1,5 @@
 ---
-title: 'DDD分层架构落地实践'
+title: '转载：DDD分层架构落地实践'
 categories:
     - Tech
 tags: 
