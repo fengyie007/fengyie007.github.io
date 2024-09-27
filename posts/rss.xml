@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 枫林小筑</title><link>/posts/</link><description>Recent content in Posts on 枫林小筑</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 27 Sep 2024 10:13:29 +0000</lastBuildDate><atom:link href="/posts/rss.xml" rel="self" type="application/rss+xml"/><item><title>小米平板5 Pro开发版不清资料刷稳定版</title><link>/posts/xiaomi-flash/</link><pubDate>Fri, 27 Sep 2024 10:13:29 +0000</pubDate><guid>/posts/xiaomi-flash/</guid><description>&lt;h2 id="前言">前言
+&lt;a class="header-anchor" href="#%e5%89%8d%e8%a8%80">&lt;/a>
+&lt;/h2>&lt;p>我的平板之前通过替换包方法不清资料切换到了开发版（根据以前的经验，停更后开发版和稳定版一般可以互刷不用清数据），现在开发版已停更，想切换到稳定版并更新到Hyper OS系统。之前系统已解锁，并刷了magisk。最新hyper os解锁还要答题，比较麻烦，因此先切换到 MIUI14稳定版，然后通过系统更新直接升级到hyper os。&lt;/p></description></item><item><title>转载：DDD分层架构落地实践</title><link>/posts/ddd-layer-action/</link><pubDate>Tue, 24 Sep 2024 11:06:38 +0000</pubDate><guid>/posts/ddd-layer-action/</guid><description>&lt;blockquote>
+&lt;h2 id="excerpt">Excerpt
+&lt;a class="header-anchor" href="#excerpt">&lt;/a>
+&lt;/h2>&lt;p>通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。&lt;/p></description></item><item><title>TCL电视开启adb调试</title><link>/posts/tcl-tv/</link><pubDate>Wed, 28 Aug 2024 14:34:00 +0000</pubDate><guid>/posts/tcl-tv/</guid><description>&lt;h2 id="adb设置及连接">adb设置及连接
+&lt;a class="header-anchor" href="#adb%e8%ae%be%e7%bd%ae%e5%8f%8a%e8%bf%9e%e6%8e%a5">&lt;/a>
+&lt;/h2>&lt;h3 id="开启adb调试">开启adb调试
+&lt;a class="header-anchor" href="#%e5%bc%80%e5%90%afadb%e8%b0%83%e8%af%95">&lt;/a>
+&lt;/h3>&lt;p>设置 -&amp;gt;系统信息 -&amp;gt; 上下左右&lt;/p>
+&lt;h3 id="查看ip">查看ip
+&lt;a class="header-anchor" href="#%e6%9f%a5%e7%9c%8bip">&lt;/a>
+&lt;/h3>&lt;p>设置 -&amp;gt;网络 -&amp;gt; 无线网络-&amp;gt; 网络详情&lt;/p>
+&lt;h3 id="安装adb">安装adb
+&lt;a class="header-anchor" href="#%e5%ae%89%e8%a3%85adb">&lt;/a>
+&lt;/h3>&lt;p>android-platform-tools&lt;/p>
+&lt;h3 id="ip连接设备">IP连接设备
+&lt;a class="header-anchor" href="#ip%e8%bf%9e%e6%8e%a5%e8%ae%be%e5%a4%87">&lt;/a>
+&lt;/h3>&lt;p>&lt;code>adb connect ip:5555 例如：192.168.1.50:5555&lt;/code>&lt;/p></description></item></channel></rss>
