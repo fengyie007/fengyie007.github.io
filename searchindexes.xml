@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>小米平板5 Pro开发版不清资料刷稳定版</title><url>/posts/xiaomi-flash/</url><categories><category>Tech</category></categories><tags><tag>小米</tag><tag>刷机</tag></tags><content type="html">  前言 我的平板之前通过替换包方法不清资料切换到了开发版（根据以前的经验，停更后开发版和稳定版一般可以互刷不用清数据），现在开发版已停更，想切换到稳定版并更新到Hyper OS系统。之前系统已解锁，并刷了magisk。最新hyper os解锁还要答题，比较麻烦，因此先切换到 MIUI14稳定版，然后通过系统更新直接升级到hyper os。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><search><entry><title>小米平板5 Pro开发版不清资料刷稳定版</title><url>/posts/xiaomi-flash/</url><categories><category>Tech</category></categories><tags><tag>小米</tag><tag>刷机</tag></tags><content type="html">  我的平板之前通过替换包方法不清资料切换到了开发版（根据以前的经验，停更后开发版和稳定版一般可以互刷不用清数据），现在开发版已停更，想切换到稳定版并更新到Hyper OS系统。之前系统已解锁，并刷了magisk。最新hyper os解锁还要答题，比较麻烦，因此先切换到 MIUI14稳定版，然后通过系统更新直接升级到hyper os。
 工具准备 MiFlash 线刷工具 相较于小米助手的刷机功能，线刷还是偏好使用 MiFlash。特点是界面简单纯粹，有自定义高级选项，可以选择刷机不上 BL 锁（对刷 MIUI 海外版来说是必须），自定义刷机脚本，EDL 刷机模式等。MiFlash 也是由小米发布的刷机工具。
 文件名称：MiFlash2020-3-14-0.rar（最新版本） 文件大小：66.7 MB 发布时间：2020-03-23 16:20:21 MD5指纹：ba6bf711e8647bf9975ad23137690083 更新内容：更新 Fastboot 版本，更新 MES 流程，支持 MTK 全擦刷机流程 下载地址： MiFlash MiFlash官网链接 固件下载 小米平板 5 Pro WiFi版固件下载，因需要开发版切稳定版，因此只能通过线刷。
-MIUI 14.0.5 线刷包 小米平板5系列刷机包官网地址 小米固件下载慢 小米原有链接是 https://bigota.d.miui.com 域名的。 但下载速度只有100kb左右。 可以替换原下载链接中域名为以下域名。
+MIUI 14.0.5 线刷包 小米平板5系列刷机包官网地址 小米固件下载慢
+小米原有链接是 https://bigota.d.miui.com 域名的。 但下载速度只有100kb左右。 可以替换原下载链接中域名为以下域名。
 cdn-ota.azureedge.net cdnorg.d.miui.com bn.d.miui.com bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com MiFlash刷机 对boot.img进行修补 下载固件后，解压出来,将解压文件夹中的 boot.img 文件复制出来。 发到平板上，通过magisk进行修补，然后传回电脑备用。
-刷机 打开MiFlash，选择解压出来的文件夹，右下角选择。 重启平板，黑屏后按住 电源键 和 音量-，直到屏幕显示fastboot，松开。
+刷入固件 打开MiFlash，选择解压出来的文件夹，右下角选择。 重启平板，黑屏后按住 电源键 和 音量-，直到屏幕显示fastboot，松开。
 右下角选择“保留用户数据”(如看不见，可偿试全屏刷机工具窗口)，然后开始刷机，等待进度完成，预计5-10分钟。完成后会自动重启。
-注意：Miflash线刷需要先将手机解BL锁   </content></entry><entry><title>转载：DDD分层架构落地实践</title><url>/posts/ddd-layer-action/</url><categories><category>Tech</category></categories><tags><tag>DDD</tag><tag>Collect</tag></tags><content type="html"><![CDATA[   Excerpt 通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。
-前言 2021 年由本人负责的微服务项目大力推广 DDD 架构设计，推广的过程中发现徒有其形，很多内在细节做得不到位。主要是团队成员对于 DDD 的理解参差不齐，团队内的约定不全面，追求代码快速实现等因素造成。
+注意：Miflash线刷需要先将手机解BL锁 刷入boot.img 刷完之后，重启再进fastboot，刷入修补后的boot.img
+#查看当前boot slot fastboot getvar current-slot #刷入对应的 slot fastboot flash boot_a fastboot reboot 更新到HyperOS 进入系统后，再通过系统更新升级到HyperOS，更新完后在重启之前，直接用magisk刷入未使用的slot，重启即OK。
+  </content></entry><entry><title>转载：DDD分层架构落地实践</title><url>/posts/ddd-layer-action/</url><categories><category>Tech</category></categories><tags><tag>DDD</tag><tag>Collect</tag></tags><content type="html"><![CDATA[   通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。
+2021 年由本人负责的微服务项目大力推广 DDD 架构设计，推广的过程中发现徒有其形，很多内在细节做得不到位。主要是团队成员对于 DDD 的理解参差不齐，团队内的约定不全面，追求代码快速实现等因素造成。
 所以决定重塑其中一个微服务，期望构建一个标准的样例供团队成员参考，并通过 Tech Huddle 的形式在团队中宣讲。
 本文会做一些经验总结供大家参考，随着时间的推移在新的项目中有新的感悟，在文末提出一些问题供大家思考。
 重塑分层架构 对项目中的分层架构进行总结和重塑，同时放入项目的 OnBoarding 文档中，便于新人上手。提取其中一张进程内架构图：
@@ -23,7 +26,8 @@ cdn-ota.azureedge.net cdnorg.d.miui.com bn.d.miui.com bkt-sgp-miui-ota-update-al
 &amp;gt; infrastructure
 &amp;gt; common
 这些目录的职能和代码形态是这样的。
-**presentation（用户接口层）：**它主要存放用户接口层与前端交互、展现数据相关的代码。前端应用通过这一层的接口，向应用服务获取展现所需的数据。这一层主要用来处理用户发送的 Restful 请求，解析用户输入的配置文件，并将数据传递给 Application 层。数据的组装、数据传输格式 …  ]]></content></entry><entry><title>TCL电视开启adb调试</title><url>/posts/tcl-tv/</url><categories><category>tech</category></categories><tags><tag>TCL</tag><tag>TV</tag></tags><content type="html"><![CDATA[  adb设置及连接 开启adb调试 设置 -&gt;系统信息 -&gt; 上下左右
+**presentation（用户接口层）：**它主要存放用户接口层与前端交互、展现数据相关的代码。前端应用通过这一层的接口，向应用服务获取展现所需的数据。这一层主要用来处理用户发送的 Restful 请求，解析用户输入的配置文件，并将数据传递给 Application 层。数据的组装、数据传输格式以及 Facade 接 …  ]]></content></entry><entry><title>TCL电视开启adb调试</title><url>/posts/tcl-tv/</url><categories><category>tech</category></categories><tags><tag>TCL</tag><tag>TV</tag></tags><content type="html"><![CDATA[  TCL 50T8H电视的第三方应用安装说明。目前偿试仅能通过adb和u盘安装，无法支持通过电视上的第三方安装软件进行远程安装。
+adb设置及连接 开启adb调试 设置 -&gt;系统信息 -&gt; 上下左右
 查看ip 设置 -&gt;网络 -&gt; 无线网络-&gt; 网络详情
 安装adb android-platform-tools
 IP连接设备 adb connect ip:5555 例如：192.168.1.50:5555

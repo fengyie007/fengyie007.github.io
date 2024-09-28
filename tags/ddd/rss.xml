@@ -1,4 +1,2 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DDD on 枫林小筑</title><link>/tags/ddd/</link><description>Recent content in DDD on 枫林小筑</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 24 Sep 2024 11:06:38 +0000</lastBuildDate><atom:link href="/tags/ddd/rss.xml" rel="self" type="application/rss+xml"/><item><title>转载：DDD分层架构落地实践</title><link>/posts/ddd-layer-action/</link><pubDate>Tue, 24 Sep 2024 11:06:38 +0000</pubDate><guid>/posts/ddd-layer-action/</guid><description>&lt;blockquote>
-&lt;h2 id="excerpt">Excerpt
-&lt;a class="header-anchor" href="#excerpt">&lt;/a>
-&lt;/h2>&lt;p>通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。&lt;/p></description></item></channel></rss>
+&lt;p>通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。&lt;/p></description></item></channel></rss>
