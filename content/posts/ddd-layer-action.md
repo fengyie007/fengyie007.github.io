@@ -8,7 +8,8 @@ tags:
 link: https://mp.weixin.qq.com/s/g2xaH_mLf07fdb-4TxAMXg
 author: 梁波Eric
 date: '2024-09-24 11:06:38'
-draft : false
+draft: false
+summary: "通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。"
 ---
 
 > 通过统一的 DDD 分层架构、规范的目录结构以及 archunit 分层框架约束，让团队成员更加清楚逻辑代码的编写位置，逐渐养成习惯。同时合理的分层以及代码逻辑隔离也能更方便地进行单元测试的编写。

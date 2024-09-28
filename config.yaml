@@ -23,6 +23,8 @@ theme: hugo-theme-next
 # Default laguage & code for website
 defaultContentLanguage: zh-cn
 languageCode: zh-CN
+
+timezone: Asia/Shanghai
 # 是否包含中文，日语，韩文
 # Whether contains Chinese, Japanese and Korean
 hasCJKLanguage: true
@@ -169,7 +171,7 @@ params:
   yearFormat: "2006"
   monthFormat: "01-02"
   dateFormat: "2006-01-02"
-  timeFormat: "2006-01-02 15:04:05-07:00"
+  timeFormat: "2006-01-02 15:04:05"
 
   # 页面模式
   # Schemes
@@ -1075,7 +1077,7 @@ params:
   # Use Animate.css to animate everything.
   # For more information: https://animate.style
   motion:
-    enable: true
+    enable: false
     async: true
     transition:
       # All available transition variants: https://theme-next.js.org/animate/
