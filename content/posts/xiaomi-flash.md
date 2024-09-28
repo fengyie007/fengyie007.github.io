@@ -9,7 +9,6 @@ date: '2024-09-27 10:13:29'
 draft : false
 ---
 
-## 前言
 我的平板之前通过替换包方法不清资料切换到了开发版（根据以前的经验，停更后开发版和稳定版一般可以互刷不用清数据），现在开发版已停更，想切换到稳定版并更新到Hyper OS系统。之前系统已解锁，并刷了magisk。最新hyper os解锁还要答题，比较麻烦，因此先切换到 MIUI14稳定版，然后通过系统更新直接升级到hyper os。
 
 ## 工具准备
@@ -34,7 +33,8 @@ MD5指纹：ba6bf711e8647bf9975ad23137690083
 
 [小米平板5系列刷机包官网地址](https://web.vip.miui.com/page/info/mio/mio/detail?postId=32286531)
 
-### 小米固件下载慢
+<b>小米固件下载慢</b>
+
 小米原有链接是 https://bigota.d.miui.com 域名的。
 但下载速度只有100kb左右。
 可以替换原下载链接中域名为以下域名。
@@ -48,11 +48,11 @@ bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com
 
 ## MiFlash刷机
 
-1. 对boot.img进行修补
+### 对boot.img进行修补
 下载固件后，解压出来,将解压文件夹中的 boot.img 文件复制出来。
 发到平板上，通过magisk进行修补，然后传回电脑备用。
 
-2. 刷机
+### 刷入固件
 打开MiFlash，选择解压出来的文件夹，右下角选择。
 重启平板，黑屏后按住 电源键 和 音量-，直到屏幕显示fastboot，松开。
 
@@ -63,3 +63,19 @@ bkt-sgp-miui-ota-update-alisgp.oss-ap-southeast-1.aliyuncs.com
 ```
 注意：Miflash线刷需要先将手机解BL锁
 ```
+
+### 刷入boot.img
+刷完之后，重启再进fastboot，刷入修补后的boot.img
+
+```
+#查看当前boot slot
+fastboot getvar current-slot
+
+#刷入对应的 slot
+fastboot flash boot_a 
+
+fastboot reboot
+```
+
+### 更新到HyperOS
+进入系统后，再通过系统更新升级到HyperOS，更新完后在重启之前，直接用magisk刷入未使用的slot，重启即OK。

@@ -185,7 +185,7 @@ params:
 
   # 站点基本信息
   # Site Information Settings
-  author: fengyie007
+  author: 冷血
   subtitle: 
   description: 
   keywords: Hugo,NexT
@@ -383,7 +383,7 @@ params:
     expandAll: false
     # 最大的列表深度，建议不要超过3层
     # Maximum heading depth of generated toc.
-    maxDepth: 3
+    maxDepth: 2
 
 
   # ---------------------------------------------------------------
